@@ -139,9 +139,7 @@
     .box-right {
         width:100% !important;
     }
-    .services_outbox {
-        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)) !important;
-    }
+    
 }
 
 @media screen and (min-width: 1500px)  {
