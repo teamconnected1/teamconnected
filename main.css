@@ -1,0 +1,473 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;    
+}
+html{
+    scroll-behavior: smooth;
+}
+.hero {
+    background-color: white;
+    margin:0 auto;
+    height: 100vh;
+    min-height:100px;
+}
+
+
+/*LANDING*/
+
+.landing{
+    position: relative;
+    z-index: 15;
+
+    height: 100vh;
+    width: 100vw;
+
+    text-align: center;
+
+
+    background-image: url("images/mahuj.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+
+    font-size: 25px;
+
+
+}
+
+.landing_flex{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid transparent;
+    
+}
+
+.landing_title{
+    color:white;
+    font-weight: 900;
+    letter-spacing: 7px;
+    font-size: 1em;
+}
+.landing_subtitle{
+
+    font-size: 1em;
+    color:white;
+    font-weight: 500;
+} 
+.logo{
+
+}
+
+
+
+
+
+
+/* NAVIGATION */
+.logonav{
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+.nav {
+    position: sticky;
+    position: -moz-sticky;
+    position: -webkit-sticky;
+    top:0;
+    display:flex;
+    justify-content: flex-end;
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+    width: 100vw;
+}
+.menu-closed{
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.logotext{
+    flex-grow: 1;
+    text-decoration: none;
+    align-items: center;
+    padding: 20px;
+    text-transform:none !important; 
+    color: crimson !important;
+    padding-left: 45px !important;
+}
+menu-btn {
+    display: none;
+}
+.menu-closed > a {
+    display:flex;
+    align-items: center;
+    padding: 20px;
+    padding-right: 45px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;  
+    font-weight: 300;
+}
+.link_hover:hover {
+    color: #e2133c;
+    transition: all 0.4s ease 0s;
+}
+
+/*
+**------------MAIN START--------------------
+*/
+
+/* MAIN - WRAPPER */
+.main {
+    width: 77vw;
+    margin: auto;
+    
+}
+
+/* SOCIAL BAR */
+
+.social {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: fixed;
+    top: 30%;
+    left: 25px;
+    z-index: 2;
+    width: 80px;
+    height: 200px;
+    background-color: white;
+    text-align: center;
+}
+.social__icon {
+    height: 30px;
+    filter: invert(22%) sepia(62%) saturate(4937%) hue-rotate(337deg) brightness(85%) contrast(104%);
+}
+.fb:hover{
+    filter: invert(34%) sepia(95%) saturate(3008%) hue-rotate(203deg) brightness(99%) contrast(92%);
+}
+.ig:hover{
+    filter: invert(61%) sepia(76%) saturate(6559%) hue-rotate(326deg) brightness(93%) contrast(92%);
+}
+.in:hover{
+    filter: invert(25%) sepia(70%) saturate(2865%) hue-rotate(183deg) brightness(93%) contrast(100%);
+}
+.gm:hover{
+    filter: invert(41%) sepia(14%) saturate(4567%) hue-rotate(330deg) brightness(88%) contrast(96%);
+}
+
+
+.profili{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-shrink: 0;
+    justify-content: space-evenly;
+
+
+}
+
+.osoba{
+    display:flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-items: center;
+    width: 180px;
+    height: max-content;
+    padding-bottom: 25px;
+    
+}
+.osoba > img {
+    border-radius: 100%;
+    margin-bottom: 14px;
+}
+.titles{
+    color:crimson;
+    text-align: center;
+}
+.team_title{
+    margin-top: 75px;
+    margin-bottom: 50px;
+
+    
+}
+
+
+.team_pic{
+    border-radius: 100%;
+}
+.flexeraj{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-left {
+    padding: 20px;
+    width: 50%;
+    align-self: flex-start;
+}
+
+
+.box-left > img {
+    width: 100%;
+    padding-top: 40px;
+}
+
+.box-right { 
+    padding: 20px ;
+    width: 50%;
+    align-self: flex-start;
+}
+
+
+/*JEEEEJ */
+
+h2{
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 50px;
+    font-size: 35px;
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+.loc_text {
+    padding-bottom: 100px; 
+    text-align: center; 
+    font-size: 20px; 
+    padding-right: 45px; 
+    padding-left: 45px;
+}
+
+.wrap{
+    width:100%;
+    height: 100%;
+
+}
+.outbox{
+    width:100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center; 
+}
+
+.title{
+    color: crimson;
+}
+
+/*usluge*/
+
+
+.short_desc{
+    text-align: center;
+    padding: 10px;
+}
+.services_outbox{
+    
+    width:100%;
+    height: 100%;
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(max-content, max-content));
+}
+.services_box{
+    
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+    
+    padding: 45px;
+}
+    .box_top{
+        
+   
+        position: relative;
+        display: grid;
+        align-items: center;
+        align-content: center;
+        padding-bottom: 20px;
+    }
+
+
+    .box_bot{
+        
+        position: relative;
+        display: grid;
+        height: 100%;
+        
+    }
+
+.box_top > h3{
+    z-index: 5 !important;
+    font-size: 25px;
+
+}
+    
+.icon{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    height: 200px;
+    width: auto;
+    opacity: 0.3;
+    filter: invert(56%) sepia(0%) saturate(1837%) hue-rotate(138deg) brightness(89%) contrast(93%);
+}
+.location{
+    display: flex;
+    justify-content: center;
+}
+
+/* KONTAKT FORMA */
+.contact {
+    width: 80%;
+    display:grid;
+    grid-template-columns: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url("./images/hello7.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 140px;
+}
+
+.forma {
+    width: 100%;
+    height: 55px;
+    border: 1px solid grey;
+    padding: 15px;
+    margin-bottom: 25px;
+    font-size: 17px;
+    background-color: rgba(255, 255, 255, 0.637); 
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #440000;
+}
+label {
+    
+    margin-left: 45px;
+    margin-top: -25px;
+    background-color: rgb(255, 255, 255);
+}
+textarea {
+        height: 120px !important;
+}
+.submit {
+    width: 50%;
+    height: 55px;
+    margin-top: 25px;
+    margin-left: 25%;
+    
+
+    font-size: 17px;
+    border: 1px solid grey;
+}
+.submit:hover {
+    background-color: crimson;
+    transition: all 0.4s ease 0s;
+
+    color: white;
+}
+.thankyou_message{
+    padding-top: 45px;
+}
+
+.privacy{
+    margin-top: 10%;
+    background-color: white;
+    padding: 10px;
+}
+
+/*
+** MAIN END 
+*/
+/* FOOTER */
+
+.footer {
+    margin-top: 20%;
+    background-color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding-top: 80px ;
+    color: white;
+    font-weight: 500;
+}
+.copyright{
+    text-align: center;  
+    padding-top: 40px;
+    font-weight: 100;
+}
+.iconsfooter {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social2{
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+.footernav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-bottom: 25px;
+}
+.footer_nav{
+    display: flex;
+    
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-weight: 500;
+}
+.footer_nav:hover{
+    color: #e2133c;
+    transition: all 0.4s ease 0s;
+}
+.social2:hover{
+    color: #e2133c;
+    transition: all 0.4s ease 0s;
+}
+
+.partner{
+    
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fpl{
+
+
+}
+.fpr{
+    padding: 10px;
+
+}
+
