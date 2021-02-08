@@ -219,7 +219,7 @@
                             </select>
                             <br>
                             <br>
-                            <input class="forma" name="ime" autocomplete="off" placeholder="Vaše ime i prezime" />
+                            <input class="forma" name="ime" autocomplete="off" required placeholder="Vaše ime i prezime" />
                             <br>
                             
                             <br>
@@ -230,7 +230,7 @@
                             <span class="email-invalid" style="display:none">
                                 Mora biti validna Email adresa</span>
                             <br>
-                            <input class="forma" name="tel" placeholder="Vaš broj telefona" />
+                            <input class="forma" name="tel" type="tel" autocomplete="off" pattern="[+,0]{1}[0-9]{9,15}" placeholder="Vaš broj telefona" />
                             <br>
                             <button class="submit">Pošalji</button>
                         </div>
